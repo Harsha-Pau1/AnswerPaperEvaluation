@@ -1,0 +1,91 @@
+<div class="container-fluid m-0 p-0">
+  <!-- <div class="px-5 py-3">
+    <h1>
+      Answer Paper Evaluation System
+    </h1>
+  </div>
+  <div class="login-main-div">
+    <app-upload-buttons></app-upload-buttons>
+  </div> -->
+  <div class="row evaluation-container">
+    <div class="col-md-2" >
+      <div style="width: 80px; height: 300px;" class="demo">
+
+      </div>
+    </div>
+    <div class="col-md-10 mt-3">
+      <h2>
+        <b>
+        Answer Paper Evaluation
+      </b>
+      </h2>
+      <h2>
+        <b>
+        System
+      </b>
+      </h2>
+      <div class="line-styles">
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12 ml-4 pl-0 mb-1 button-container">
+              <div class="fil-btn-stl file btn btn-lg btn-primary">
+                Upload the answer sheet
+                <input class="file-input-stl" type="file" name="file" (change)="onAnswerSheetSelect($event)"/>
+              </div>
+            </div>
+            <div class="pl-5">
+              <span *ngIf="ansSheetName">
+              <img src="../../../assets/images/file-icon.png" style="height: 20px;"/>
+              <span class="file-stl">
+                {{ansSheetName}}
+              </span>
+            </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 ml-4 mb-1 pl-0 mt-4 button-container">
+              <div class="fil-btn-stl file btn btn-lg btn-primary">
+                Upload the key sheet
+                <input class="file-input-stl" type="file" name="file" (change)="onAnswerKeySelect($event)"/>
+              </div>
+            </div>
+            <div class="pl-5">
+              <span *ngIf="ansKeyName">
+                <img src="../../../assets/images/file-icon.png" style="height: 20px;"/>
+                <span class="file-stl">
+                  {{ansKeyName}}
+                </span>
+              </span>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-12 ml-4 pl-0 mb-1 button-container">
+              <button class="submit-button" (click)="submitFile()">Submit for evaluation</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div *ngFor="let msg of renderMsgArray">
+            <div class="mb-2"> 
+              <img src="../../../assets/images/tick-icon.jpg" style="height: 26px;"/>
+              <span class="pl-3">{{msg}}</span>
+            </div>
+          </div>
+          <div *ngIf="showLoader == true" class="spinner-border text-primary" role="status" style="margin-left: 85px; margin-top: 75px;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div *ngIf="showMark == true" style="margin-left: 40px; margin-top: 66px; color: black;">
+            <span>Obtained marks: <h2><b>88 out of 100</b></h2></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

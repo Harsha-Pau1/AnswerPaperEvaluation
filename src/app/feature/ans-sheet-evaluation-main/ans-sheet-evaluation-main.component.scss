@@ -1,0 +1,99 @@
+@import "../../../variable.scss";
+
+.evaluation-container {
+  min-height: 100vh;
+  height: 600px;
+  .img-stls {
+    width: 125px;
+    height: 200px;
+  }
+  .line-styles {
+    border-top: 4px solid black;
+    width: 600px;
+    margin-left: 125px;
+    position: absolute;
+    top: 66px;
+  }
+  .button-container {
+    margin: 10px 50px;
+    cursor: pointer;
+    .login-button {
+        width: 280px;
+        background: #ffdc5d;
+        padding: 12px 24px;
+        font-family: OpenSans-SemiBold;
+        border-radius: 22px;
+        overflow: hidden;
+        border: none;
+      
+        &:hover {
+          cursor: pointer;
+          // border-bottom: 2px solid $dbblue;
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2), 0 5px 6px 0 rgba(0, 0, 0, .19);
+        }
+      
+        &:focus {
+          outline: none;
+        }
+      }
+      .submit-button {
+        width: 280px;
+        background: black;
+        color: white;
+        padding: 12px 24px;
+        font-family: OpenSans-SemiBold;
+        border-radius: 22px;
+        overflow: hidden;
+        border: none;
+      
+        &:hover {
+          cursor: pointer;
+          // border-bottom: 2px solid $dbblue;
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2), 0 5px 6px 0 rgba(0, 0, 0, .19);
+        }
+      
+        &:focus {
+          outline: none;
+        }
+      }
+}
+.file-stl {
+  font-size: 15px;
+}
+.demo{
+  background-image: radial-gradient(circle, #000 20%, transparent 10%), radial-gradient(circle, #000 20%, transparent 10%);
+  background-size: 50px 25px;
+  background-position: 0 0, 25px 0px;
+}
+.fil-btn-stl {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  background: #ffdc5d;
+  font-size: 16px;
+  color: black;
+  padding: 12px 24px;
+  font-family: OpenSans-SemiBold;
+  border-radius: 22px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+    // border-bottom: 2px solid $dbblue;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2), 0 5px 6px 0 rgba(0, 0, 0, .19);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+.file-input-stl {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+}
